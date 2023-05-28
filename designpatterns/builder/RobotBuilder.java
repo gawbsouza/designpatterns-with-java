@@ -99,7 +99,7 @@ public abstract class RobotBuilder {
 	}
 
 	private String validateExceptionMessage(String part) {
-		return String.format("%s materia must by specified", part);
+		return String.format("%s material must by specified", part);
 	}
 
 }
