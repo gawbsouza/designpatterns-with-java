@@ -1,6 +1,10 @@
-package designpatterns.builder;
+import designpatterns.builder.Robot;
+import designpatterns.builder.RobotBuilder;
+import designpatterns.builder.RobotCreator;
+import designpatterns.builder.CopperRobotBuilder;
+import designpatterns.builder.RandomRobotBuilder;
 
-public class Main {
+public class BuilderPattern {
 	public static void main(String[] args) {
 
 		RobotBuilder copperBuilder = new CopperRobotBuilder();
@@ -12,7 +16,9 @@ public class Main {
 									randomBuilder, "My Random Robot");
 
 		copperRobot.printInfos();
+
 		System.out.println("-------------\n");
+		
 		randomRobot.printInfos();
 	}
 }
